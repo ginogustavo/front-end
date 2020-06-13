@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css"> 
+        h1{
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*
+        p:first-child{
+            color: green;
+        }
+        p:last-child{
+            color: red;
+        }
+        */
+
+        /*
+        p:nth-child(2n){
+            color: yellow;
+        }
+        p:nth-child(2n+1){
+            color: brown;
+        }
+        */
+        p::first-letter{
+            color: red;
+            font-size: 20px;
+        }
+        .message::after{
+            content: " << ";
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--h1>Main title</h1-->
+    <p>🐬 Dolphin</p>
+    <p>Paragraph 1</p>
+    <p>Paragram 2</p>
+    <p>🐅 Tiger </p>
+    <p> 🦅 Eagle</p>
+
+    <p class="message">This list is test </p>
+
+</body>
+</html>
