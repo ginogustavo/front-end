@@ -3,26 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BEM</title>
 </head>
 <style>
 /*
-BEM: Block Element Modifier
-Separte Blocks, Elements and Modifiers
+BEM: Block Element Modifier: Separte Blocks, Elements and Modifiers
 */
 
+.main-menu{
+    background-color: skyblue;
+}
+.main-menu__image{
+}
+.main-menu__item{
+    color: brown;
+    background-color: skyblue;
+    font-size: 50px;
+}
+
+.button{
+    font-family: Georgia;
+}
+.button--primary{
+    background-color: skyblue;
+}
+.button--secondary{
+    background-attachment: gray;
+}
+
+.title{
+    color: olivedrab;
+}
+.title--big-title{
+    font-size: 80px;
+}
+.title--small-title{
+    font-size: 40px;
+}
+h1{
+    text-decoration: underline;
+}
 </style>
 <body>
+    <h1>Main structure of BEM:</h1>
+    <!-- 
+            Block -> header
+            Element -> button
+            Modifier -> red
+    -->
     <header class="header">
-        <!-- 
-            header  -> Block 
-            button  -> Element
-            red     -> Modifier
-        -->
         <button class="header__button--red">RED</button>
         <button class="header__button--yellow">YELLOW</button>
-
     </header>
+
+    <h1>Examples of Block and Elements:</h1>
+    <nav class="main-menu">
+        <img src="images/logoG.png" alt="Logo" class="main-menu__image">
+        <button class="main-menu__item">Join</button>
+        <button class="main-menu__item">Login</button>
+        <button class="main-menu__item">Pricing</button>
+        <button class="main-menu__item">Features</button>
+    </nav>
+
+
+    <h1>One More example of Block and Element</h1>
+    <section>
+        <article class="trend-article">
+            <div class="trend-article__content">
+                <img src="images/logoG.png" alt="" class="trend-article__imagen">
+                <p  class="trend-article__text"> Text</p>
+            </div>
+            <span class="trend-article__author">
+                @Author
+            </span>
+        </article>
+    </section>
+
+
+    <h1>Example of Modifiers</h1>
+    <!-- 
+    Never User only Modifiers, they are used to modify already exising Blocks or elements
+    They must be go with a Block or Element class 
+    -->
+    <h1 class="title title--big-title">Main title</h1>
+    <h2 class="title title--small-title">Second title</h2>
+
+    <button class="button button--primary">Primary Button</button>
+    <button class="button button--secondary">Secondary Button</button>
     
 </body>
 </html>
