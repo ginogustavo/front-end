@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+.layout{
+    display: grid;
+    grid-template-rows: 50px 40px 200px;
+    grid-template-columns: 150px auto;
+    grid-template-areas: 
+        "image searcher"
+        ". menu"
+        ". content";
+}
+.layout > div{
+    border: 1px solid red;
+}
+.image{
+    grid-area: image;
+}
+.searcher{
+    grid-area: searcher;
+}
+.content{
+    grid-area: content;
+}
+.container{
+    display: flex;
+    grid-area: menu;
+}
+.item{
+    padding: 0.5rem 0.5rem;
+}
+.is-active{
+    color: blue;
+    border-bottom: 5px solid blue;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="layout">
+        <div class="image">Image</div>
+        <div class="searcher">Searcher</div>
+        <div class="container">
+            <div class="item is-active">All</div>
+            <div class="item">Maps</div>
+            <div class="item">Images</div>
+            <div class="item">Videos</div>
+        </div>
+        <div class="content">Content</div>
+    </div>
+
+</body>
+</html>
