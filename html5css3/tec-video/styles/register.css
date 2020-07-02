@@ -45,7 +45,7 @@ body {
 }
 
 .register__container a {
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   cursor: pointer;
   color: white;
@@ -56,39 +56,37 @@ body {
   text-decoration: underline;
 }
 
+.input {
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid white;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  outline: none;
+  height: 50px;
+}
+/*Pseudo element*/
+::placeholder {
+  color: white;
+}
 
-
-.input{
-    background-color: transparent;
-    border-left: 0px;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 2px solid white;
-    font-family: "Muli", sans-serif;
-    font-size: 16px;
-    margin-bottom: 20px;
-    padding: 0px 20px;
-    outline: none;
-    height: 50px;
-  }
-  /*Pseudo element*/
-  ::placeholder{
-    color: white;
-  }
-
-  .button{
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: "Muli", sans-serif;
-    height: 50px;
-    letter-spacing: 1px;
-    margin: 10px 0px;
-  }
+.button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Muli", sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
 
 .footer {
   display: flex;
