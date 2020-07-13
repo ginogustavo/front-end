@@ -47,3 +47,13 @@ console.log(typeof i);
  * 
  * Every properties of value are strings
  */
+
+//the order is also considered:
+console.log(""+1+2);    //12
+console.log(1+2+"");    //3
+
+
+parseInt("123hu") //Analize string until the character it is not number
+//123
+Number("123hu")
+//NaN
