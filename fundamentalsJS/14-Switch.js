@@ -73,7 +73,7 @@ let sign_dates = {
     sagittarius: 'November 22 - December 21',
     capricorn: 'December 22 - January 19',
     aquarius: 'January 20 - February 19',
-    pisces: 'February 20 - March 20'
+    pisces: 'Febru ary 20 - March 20'
 }
 
 let dates = sign_dates[sign]

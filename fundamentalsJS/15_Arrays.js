@@ -15,7 +15,6 @@ for (let index = 0; index < people.length; index++) {
 
 // filter()
 //==========
-
 const isTall = (person) => person.height >= 1.75;
 let tall_people = people.filter(isTall); // this condition has to be a function
 let tall_people2 = people.filter(function (person) {
@@ -28,12 +27,6 @@ let tall_people4 = people.filter((person) => person.height >= 1.75);
 let tall_people5 = people.filter(({ height }) => height >= 1.75);
 let short_people = people.filter(({ height }) => height < 1.75);
 
-//Number sample
-let numbers = [9, 5, 8, 4, 6, 7, 1, 3, 0];
-let small_numbers_filter = (num) => num < 5;
-let small_numbers = numbers.filter(small_numbers_filter);
-console.log(small_numbers);
-console.table(luffy);
 
 //.map() - return new array modifying each elmenents we pass from original array.
 //===================
@@ -74,16 +67,6 @@ let transformed3 = people.map(transformToCm3);
 console.table(transformed3); // new array
 console.table(people); // original not modified
 
-//Ex. add a value property based on another property.
-const tall_transformer = (person) => ({
-  ...person,
-  isTall: isTall(person),
-});
-let new_people = people.map(tall_transformer);
-
-console.table(new_people); // new array
-console.table(people); // original not modified
-
 // reduce()
 //==========
 
@@ -106,8 +89,9 @@ let count = readers.reduce(book_counter2, 0); // reduce to a total number (of bo
 
 console.log(`The total number of books is ${count} `);
 
-// Ex. sum of numbers in an array:
-//const summing = (total, number) => total + number
-//let sum_num = numbers.reduce(summing, 0);
-let sum_num = numbers.reduce((total, number) => total + number, 0);
-console.log(sum_num);
+//find() - finds the first occurrence
+
+let numbers = [9, 5, 8, 4, 6, 7, 1, 3, 0];
+let small_numbers_filter = (num) => num < 5;
+let small_numbers = numbers.find(small_numbers_filter)
+console.log(small_numbers) // 4
