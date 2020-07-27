@@ -26,3 +26,15 @@ while (person.weight > TARGET_WEIGHT) {
 console.log(
   `After ${dayNumber} days,  ${person.name} weights ${person.weight.toFixed(1)}`
 );
+
+
+//Do While
+//========
+let counter = 0
+let process_overheat = () => Math.random() < 0.25
+
+do{
+    counter++
+}while( !process_overheat() )
+
+console.log(`Queried ${counter} ${(counter==1)?'time':'times'}`)
