@@ -21,3 +21,8 @@ readFile("./file1.txt")
   .then(readFile)
   .then((data) => console.log(data))
   .catch((err) => console.error(err));
+
+
+//Promise.all - receives a list of promises to run simustaneously
+// if any is rejected then the entire list is rejected too
+// if all are resolved, then we can get a list of all response.
