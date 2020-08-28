@@ -61,6 +61,15 @@
 
       <br /><br />
 
+      <label for="payment">Credit Card Number (no spaces):</label>
+      <br>
+      <input id="payment" name="payment" type="text" required pattern="[0-9{14,16}]">
+      
+      <!-- only letters and numbers (and not special characters like ! or @) -->
+      <input id="username" name="username" type="text" required minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+">
+      <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions       -->
+      <br /><br />
+
       <input type="submit" value="Send" />
     </form>
   </body>
