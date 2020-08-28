@@ -10,7 +10,7 @@
       <!-- Forms: some inputs
         ================== -->
 
-        <label for="volume">Volume(Range)</label>
+      <label for="volume">Volume(Range)</label>
       <input
         id="volume"
         name="volume"
@@ -19,6 +19,19 @@
         max="100"
         step="1"
       />
+
+      <br><br>
+
+      DataList options:
+      <input type="text" list="cities" id="city" name="city" />
+      <datalist id="cities">
+        <option value="New York City"></option>
+        <option value="Tokyo"></option>
+        <option value="Barcelona"></option>
+        <option value="Mexico City"></option>
+        <option value="Melbourne"></option>
+        <option value="Other"></option>
+      </datalist>
     </form>
   </body>
 </html>
