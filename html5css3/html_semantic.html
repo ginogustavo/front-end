@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Login</li>
+          <li>Articles</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- <section> defines elements in a document, such as chapters, headings,
+           or any other area of the document with the same theme. For example, 
+           content with the same theme such as articles about cricket can go under
+            a single <section>. A website’s home page could be split into sections 
+                for the introduction, news items, and contact information. -->
+
+      <section>
+        <!-- The <article> element holds content that makes sense on its own. 
+            <article> can hold content such as articles, blogs, comments, 
+                magazines, etc. An <article> tag would help someone using a screen 
+                    reader understand where the article content -->
+
+        <article>
+          <h2>Facts About Dogs</h2>
+          <p>
+            Dogs have a sense of time. It's been proven that they know the
+            difference between a hour and five. If conditioned to, they can
+            predict future events, such as regular walk times.
+          </p>
+        </article>
+
+        <!-- <aside> element is used to mark additional information that can 
+            enhance another element but isn’t required in order to understand 
+            the main content -->
+        <aside>
+          <p>
+            A study was conducted on dogs being away from their owners for
+            varying hours and the studies show that dogs who were away from
+            their owners the longest showed the greatest amount of affection!
+          </p>
+        </aside>
+      </section>
+
+      <!-- <figure> is an element used to encapsulate media such as an image, 
+          illustration, diagram, code snippet, etc, which is referenced in the 
+          main flow of the document. -->
+      <figure>
+        <img src="overwatch.jpg" />
+
+        <!-- <figcaption> is an element used to describe the media in the 
+            <figure> tag. Usually, <figcaption> will go inside <figure> -->
+        <figcaption>This picture shows characters from Overwatch.</figcaption>
+      </figure>
+
+      <audio controls>
+        <!-- autoplay -->
+        <source
+          src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio#Attributes -->
+
+      <video
+        src="https://content.codecademy.com/courses/SemanticHTML/dog-video.mp4"
+        controls
+      >
+        not suported
+      </video>
+
+      <embed
+        src="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif"
+      />
+    </main>
+
+    <footer>
+      email: myemail@mydomain.com
+    </footer>
+  </body>
+</html>
