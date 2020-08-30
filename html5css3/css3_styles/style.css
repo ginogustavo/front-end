@@ -1,0 +1,50 @@
+/*
+IDs are the most specific selector in CSS, 
+followed by classes, 
+and finally, tags. 
+*/
+
+h1 {
+  color: blue;
+}
+
+.headline {
+  color: green;
+  text-transform: capitalize;
+}
+
+/* Chaining Selectors
+===================== */
+h1.special {
+  color: yellow;
+}
+
+/*Nested*/
+.main-list li {
+  color: brown;
+}
+
+/*Chaining and Specificity*/
+.description h5 {
+  color: teal;
+}
+/*The latter is mor specific and the next will not take into account int he 
+html structre we have*/
+h5 {
+  color: rebeccapurple;
+}
+
+/*Multiple Selectors*/
+/*Instead of writing:
+        h1 {
+        font-family: Georgia;
+        }
+
+        .menu {
+        font-family: Georgia;
+        }
+*/
+h1,
+.menu {
+  font-family: Georgia;
+}
